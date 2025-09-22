@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        .footer {
+            display: flex;
+            width: 1440px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        
+        .top-footer {
+            display: flex;
+            height: 296px;
+            padding: 10px;
+            align-items: flex-start;
+            gap: 10px;
+            align-self: stretch;
+        }
+        
+        .left-side {
+            display: flex;
+            padding: 54px 18px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            flex: 1 0 0;
+            align-self: stretch;
+        }
+        
+        .heading {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo {
+            width: 47px;
+            height: 47px;
+            aspect-ratio: 1/1;
+           
+        }
+        
+        .title {
+            width: 621px;
+                     color: #000;
+            font-family: Inter, sans-serif; /* Added fallback font */
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .description {
+            width: 300px;
+            height: 57px;
+            color: #000;
+            font-family: Inter, sans-serif; /* Added fallback font */
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        .social-links {
+            width: 144px;
+            height: 24px;
+        }
+        
+        .social-links-frame {
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        
+        .social-links-one,
+        .social-links-two,
+        .social-links-three {
+            width: 24px;
+            height: 24px;
+            filter: drop-shadow(0 8px 24px rgba(24, 39, 75, 0.08)) drop-shadow(0 6px 12px rgba(24, 39, 75, 0.12));
+        }
+
+        .right-side {
+            display: flex;
+            padding: 45px 18px;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            flex: 1 0 0;
+            align-self: stretch;
+            flex-wrap: wrap;
+        }
+        
+        .menu-one,
+        .menu-two,
+        .menu-three {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            flex: 1 0 0;
+        }
+        
+        .menu-one h1,
+        .menu-two h1,
+        .menu-three h1 {
+            align-self: stretch;
+            color: #000;
+            font-family: Roboto, sans-serif; /* Added fallback font */
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        
+        .menu-one p,
+        .menu-two p,
+        .menu-three p {
+            align-self: stretch;
+            color: #000;
+            font-family: Roboto, sans-serif; /* Added fallback font */
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .bottom-bar {
+            display: flex;
+            height: 36px;
+            padding: 10px 29px;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-self: stretch;
+            background: #B18341;
+        }
+        
+        .copyright {
+            display: flex;
+            padding: 1px 27px 1px 0;
+            align-items: center;
+        }
+        
+        .copyright p {
+            color: #152129;
+            font-family: Roboto, sans-serif; /* Added fallback font */
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+        
+        .pages {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+        }
+        
+        .pages p {
+            color: #152129;
+            font-family: Roboto, sans-serif; /* Added fallback font */
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer"> <!-- Added class attribute -->
+        <div class="top-footer">
+            <div class="left-side">
+                <div class="heading">
+                    <div class="logo">
+                     <img src="logo 1.svg" alt="" srcset="">
+                    </div>
+                    <div class="title">
+                        <p>WealthySteps Advisor</p>
+                    </div>
+                </div>
+                
+                <div class="description">
+                    At WealthySteps Advisor, we go beyond traditional portfolio management. Our mission is to provide risk-calibrated investment strategies that ensure consistent, long-term growth with minimal risk. 
+                </div>
+
+                <div class="social-links">
+                    <div class="social-links-frame">
+                        <div class="social-links-one">
+                            <img src="social.svg" alt="Social media icon">
+                        </div>
+                        <div class="social-links-two">
+                            <img src="Vector.svg" alt="Social media icon">
+                        </div>
+                        <div class="social-links-three">
+                            <img src="Vector facebook.svg" alt="Social media icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="menu-one">
+                    <h1>Services</h1>
+                    <p>Portfolio Management</p>
+                    <p>Advisory Services</p>
+                    <p>Investor Onboarding</p>
+                    <p>Investor Registration</p>
+                </div>
+                <div class="menu-two">
+                    <h1>Portfolios</h1>
+                    <p>Asset Allocation Overview</p>
+                    <p>Low Risk</p>
+                    <p>Medium Risk</p>
+                    <p>High Risk</p>
+                </div>
+                <div class="menu-three">
+                    <h1>Our Edge</h1>
+                    <p>Risk Calibrated Investing</p>
+                    <p>Quality of Returns</p>
+                    <p>Human Touch</p>
+                    <p>Market Knowledge and Research</p>                   
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            <div class="copyright">
+                <p>© 2025 All Rights Reserved</p>
+            </div>
+            <div class="pages">
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+                <p>Accessibility</p>
+                <p>Cookies Policy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
