@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTA Component - Work with Experts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+        }
+
+        .cta-component {
+            display: flex;
+            min-height: 100vh;
+            max-width: 1400px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 0;
+        }
+
+        /* Component can also be used with different backgrounds */
+        .cta-component.with-background {
+            background: #f8f9fa;
+            border-radius: 24px;
+            margin: 20px;
+            overflow: hidden;
+        }
+
+        .cta-component.compact {
+            min-height: 80vh;
+        }
+
+        .content-section {
+            flex: 1;
+            padding: 80px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #ffffff;
+        }
+
+        .cta-tag {
+            display: inline-block;
+       
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 32px;
+            letter-spacing: 0.5px;
+        }
+
+        .main-heading {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            line-height: 1.1;
+            margin-bottom: 48px;
+            letter-spacing: -0.02em;
+        }
+
+        .main-heading .italic {
+            font-style: italic;
+            color: #333;
+        }
+
+        .get-started-btn {
+            display: inline-flex;
+            align-items: center;
+            background: #000;
+            color: white;
+            text-decoration: none;
+            padding: 18px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 48px;
+            width: fit-content;
+            transition: all 0.3s ease;
+        }
+
+        .get-started-btn:hover {
+            background: #333;
+            transform: translateY(-2px);
+        }
+
+        .arrow-icon {
+            width: 20px;
+            height: 20px;
+            margin-left: 12px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .features-list {
+            list-style: none;
+        }
+
+        .features-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .check-icon {
+            width: 24px;
+            height: 24px;
+            background: #d0d0d0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+            color: #666;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .image-section {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            border-radius: 24px;
+            margin: 20px;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 24px;
+        }
+
+        .workspace-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* CTA Component Responsive Design */
+        @media (max-width: 1024px) {
+            .cta-component {
+                flex-direction: column;
+            }
+
+            .content-section {
+                padding: 60px 40px;
+            }
+
+            .main-heading {
+                font-size: 3rem;
+            }
+
+            .image-section {
+                min-height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .cta-component {
+                margin: 10px;
+            }
+
+            .cta-component.with-background {
+                margin: 10px;
+                border-radius: 16px;
+            }
+
+            .content-section {
+                padding: 40px 24px;
+            }
+
+            .main-heading {
+                font-size: 2.5rem;
+                margin-bottom: 32px;
+            }
+
+            .features-list li {
+                font-size: 16px;
+            }
+
+            .get-started-btn {
+                padding: 16px 28px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- CTA Component: Work with Experts -->
+    <div class="cta-component">
+        <div class="content-section">
+            <div class="cta-tag">[CTA]</div>
+            
+            <h2 class="main-heading">
+                Work with Experts to<br>
+                Grow Faster & Run<br>
+                <span class="italic">Smarter</span>
+            </h2>
+
+            <a href="#" class="get-started-btn">
+                Get Started
+                <div class="arrow-icon">↗</div>
+            </a>
+
+            <ul class="features-list">
+                <li>
+                    <div class="check-icon">✓</div>
+                    Schedule a Free Consultation
+                </li>
+                <li>
+                    <div class="check-icon">✓</div>
+                    Discover Custom Solutions
+                </li>
+                <li>
+                    <div class="check-icon">✓</div>
+                    Start Building Your Competitive Advantage
+                </li>
+            </ul>
+        </div>
+
+        <div class="image-section">
+            <!-- Your image will go here -->
+            <img src="Header.png" alt="Professional workspace with hands typing on laptop" />
+        </div>
+    </div>
+</body>
+</html>
